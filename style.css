@@ -1,3 +1,20 @@
+/* 노말라이즈 */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* sec_healthy 섹션 시작 */
+.sec_healthy {
+  max-width: 1560px;
+  margin: 0 auto;
+}
+
 .tab_menu {
   margin-bottom: 20px;
 }
@@ -7,18 +24,18 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  justify-content: center;
 }
 
 .tab_item {
   padding: 10px 20px;
   cursor: pointer;
-  background-color: #f4f4f4;
   transition: background-color 0.3s;
 }
 
-.tab_item.active {
-  background-color: #00aaff;
-  color: white;
+.tab_item > a.active {
+  text-decoration: underline;
+  display: block;
 }
 
 .tab_inner_wrap {
@@ -38,6 +55,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 .swiper-pagination {
@@ -45,8 +63,9 @@
 }
 
 .swiper-slide img {
-  width: 100%;
-  height: 100%;
+  width: 504px;
+  height: 542px;
   object-fit: cover;
   visibility: visible;
 }
+/* sec_healthy 섹션 끝 */
